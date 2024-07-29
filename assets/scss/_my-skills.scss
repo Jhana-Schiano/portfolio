@@ -1,0 +1,52 @@
+.hard-skill {
+    border-radius: 5px;
+    border: 2px solid $grigio;
+    margin: 1%;
+    //testo
+    color: $primario;
+    font-size: 2em;
+}
+
+.hard-skill:hover {
+    background-color: $contrasto;
+    color: white;
+}
+
+.hard-skill-testo {
+    margin: 0 auto;
+    width: 85%;
+    border-bottom: 2px solid $contrasto;
+
+    ul {
+        list-style-type: none;
+        padding: 2%;
+
+        li {
+            margin: 2% 0;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.hard-skill-testo:last-of-type {
+    border: none;
+}
+
+//soft skills
+.soft-skill {
+    .lettere {
+        border: 1px solid $grigio;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px;
+    }
+}
+
+.soft-skill:hover {
+    .col:hover {
+        background-color: $contrasto;
+        color: white;
+    }
+}

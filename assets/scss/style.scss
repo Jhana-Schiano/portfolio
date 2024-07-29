@@ -1,0 +1,207 @@
+//modifico variabili predefinite di bootstrap
+$primary: #9000aa;
+$secondary: #ff5757;
+$navbar-padding-y: 0; //tolgo il padding della navbar sticky 
+
+
+//importo bootstrap
+// scss-docs-start import-stack
+// Configuration
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/utilities";
+
+// Layout & components
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/images";
+@import "../bootstrap/scss/containers";
+@import "../bootstrap/scss/grid";
+@import "../bootstrap/scss/tables";
+@import "../bootstrap/scss/forms";
+@import "../bootstrap/scss/buttons";
+@import "../bootstrap/scss/transitions";
+//@import "../bootstrap/scss/dropdown";
+@import "../bootstrap/scss/button-group";
+@import "../bootstrap/scss/nav";
+@import "../bootstrap/scss/navbar";
+@import "../bootstrap/scss/card";
+//@import "../bootstrap/scss/accordion";
+//@import "../bootstrap/scss/breadcrumb";
+@import "../bootstrap/scss/pagination";
+//@import "../bootstrap/scss/badge";
+//@import "../bootstrap/scss/alert";
+//@import "../bootstrap/scss/progress";
+@import "../bootstrap/scss/list-group";
+@import "../bootstrap/scss/close";
+//@import "../bootstrap/scss/toasts";
+//@import "../bootstrap/scss/modal";
+//@import "../bootstrap/scss/tooltip";
+//@import "../bootstrap/scss/popover";
+@import "../bootstrap/scss/carousel";
+//@import "../bootstrap/scss/spinners";
+//@import "../bootstrap/scss/offcanvas";
+
+// Helpers
+@import "../bootstrap/scss/helpers";
+
+// Utilities
+@import "../bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+//importo file config
+@import "config";
+
+
+//style del sito - HOME PAGE
+
+//header
+header {
+    border-bottom: 5px solid $primario;
+    background-color: $contrasto;
+}
+
+//navbar sticky
+    .menu {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            background-color: $contrasto;
+            color: white;
+            border-radius: 7px;
+        }
+    }
+
+//sezione chi sono
+.titolo-bio {
+    @extend %testo;
+    color: $contrasto;
+    font-size: 2em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.testo-bio {
+    @extend %testo;
+    color: $contrasto;
+    font-size: 2em;
+}
+
+//sezione skills
+.skill-container {
+    background-color: $contrasto;
+    border-radius: 40% 15% / 60% 30%;
+    position: relative;
+
+    ul {
+
+        li {
+            list-style-type: none;
+            color: white;
+
+        }
+
+    }
+
+    //svg hard skills
+    #mobile {
+        width: 12%; //height auto
+        position: absolute;
+        top: 13%;
+        right: 7%;
+
+    }
+
+    #computer {
+        width: 17%;
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+
+    }
+
+    //svg soft skills
+    #pianeta {
+        width: 12%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+    }
+
+    #astronauta {
+        width: 17%;
+        position: absolute;
+        bottom: 10%;
+        left: 13%;
+    }
+}
+
+//sezione out of work 
+//mappa con icone
+.max {
+    max-width: 720px;
+
+    img {
+        width: 25%;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+//footer
+footer {
+    background-color: $contrasto;
+    border-top: 5px solid $primario;
+
+    p {
+        color: white;
+    }
+
+    .social {
+        a {
+            color: white;
+        }
+    }
+}
+
+//PAGE OUT OF WORK
+@import "out-of-work";
+
+//PAGE MY SKILLS
+@import "my-skills";
+
+
+//media query
+//mobile (fino a 576 pixel, ovver il breackpoint small di bootstrap)
+@media only screen and (max-width: 576px) {
+
+    //pagina out of work sezione passioni
+    .notext {
+        opacity: 0;
+    }
+
+    //pagina myskill sezione soft skills
+    .lettere {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* Tablet Styles */
+//dal breakpoint small fino al large di bootstrap
+@media only screen and (min-width: 576px) and (max-width: 992px) {}
+
+/* Desktop Styles */
+//dal large in poi
+@media only screen and (min-width: 992px) {}

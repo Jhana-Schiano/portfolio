@@ -1,0 +1,60 @@
+//variabili
+$primario: #ff5757; //titoli, bottoni
+$contrasto: #9000aa; //sfondo, hover 
+$grigio: #cecece; //bordi
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//testo e scritte
+%testo {
+    font-family: "Satisfy", cursive;
+    font-style: normal;
+    color: $primario;
+}
+//testi per header
+.titolo {
+    @extend %testo;
+    font-weight: 800;
+    font-size: 6.0em;
+    letter-spacing: 2px;
+}
+
+.sottotitolo {
+    @extend %testo;
+    font-weight: 600;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+
+}
+
+.sottotitolo2 {
+    @extend %testo;
+    font-weight: 400;
+    font-size: 2.0em;
+}
+//titoli e sottotitoli delle varie sezioni all'interno della page
+.titolo-sezione{
+    @extend %testo;
+    font-size: 2.0em;
+}
+
+.sottotitolo-sezione{
+    @extend %testo;
+}
+
+.paragrafo-sezione{
+    color:black;
+}
+
+//linea colorata per dividere le sezioni
+.divisore{
+    border: 2px solid $primario;
+    border-radius: 60%;
+    width: 65%;
+    margin:0 auto;
+}

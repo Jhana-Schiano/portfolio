@@ -1,0 +1,57 @@
+.obiettivi {
+    position: relative;
+    height: 500px;
+    overflow-y: scroll;
+
+    nav {
+        ul {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            li {
+                border-radius: 5px;
+            }
+
+            li:hover {
+                background-color: $contrasto;
+
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+    }
+
+    .card {
+        border-radius: 15px;
+        box-shadow: 1px 1px 2px;
+    }
+
+}
+
+//modifico la scrollbar SOLO del contenitore obiettivi
+.obiettivi::-webkit-scrollbar {
+    width: 12px;
+}
+
+.obiettivi::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.obiettivi::-webkit-scrollbar-thumb {
+    background-color: $grigio;
+    border-radius: 10px;
+}
+
+//carousel con la mappa delle passioni 
+//classe che mette in risalto un svg in base al carousel attivo
+
+.img-risalto{
+   box-shadow: 3px 3px 10px $contrasto;
+   background-color: $contrasto;
+   border-radius: 7px;
+}
