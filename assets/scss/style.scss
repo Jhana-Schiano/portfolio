@@ -180,23 +180,21 @@ footer {
 @import "my-skills";
 
 
-//media query
-//mobile (fino a 576 pixel, ovver il breackpoint small di bootstrap)
+/*media query */
+//Mobile (fino a 576 pixel, ovver il breackpoint small di bootstrap)
 @media only screen and (max-width: 576px) {
-
-    //pagina out of work sezione passioni
-    .notext {
-        opacity: 0;
-    }
-
     //pagina myskill sezione soft skills
     .lettere {
         width: 50%;
         margin: 0 auto;
     }
 
-}
+    //pagina myskill sezione hard skill prima parte
+    .contenitore-hard-skill{
+        display: none;    
+    }
 
+}
 
 /* Tablet Styles */
 //dal breakpoint small fino al large di bootstrap

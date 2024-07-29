@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> <!--satisfy-->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-    <!--icona "diversity", myskills -->
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -32,6 +31,7 @@
             </div>
         </div>
     </header>
+    
     <!--navbar sticky-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
         <div class="container">
@@ -52,13 +52,15 @@
 
     <!--hard skills-->
     <h3 class="titolo-sezione text-center my-5">Hard Skills</h3>
-    <div class="container g-0 my-5">
+    <div class="container g-0 my-5 pb-5 contenitore-hard-skill"> 
+        <!-- .contenitore-hard-skill è presente nella sezione "media query" di style.scss
+         toglie il container nel mobile-->
         <div class="row">
-            <div class="col col-md-6 col-lg-4 text-center g-0">
+            <div class="col-sm-6 col-lg-4 text-center g-0">
                 <div class="col py-5 hard-skill">html e css</div>
-                <div class="col py-2 hard-skill"> sass</div>
+                <div class="col py-2 hard-skill">sass</div>
             </div>
-            <div class="col-md-6 col-lg-4 text-center g-0">
+            <div class="col-sm-6 col-lg-4 text-center g-0">
                 <div class="col py-2 hard-skill">mysql</div>
                 <div class="col py-5 hard-skill">c++ e python</div>
             </div>
@@ -68,15 +70,15 @@
             </div>
         </div>
     </div>
-    <div class="container pt-5">
+    <div class="container">
         <div class="row hard-skill-testo pb-5"> <!--linguaggi-->
             <div class="col-sm-6 col-lg-4 text-center">
                 <h3 class="sottotitolo-sezione my-3">Linguaggi :</h3>
             </div>
             <div class="col-sm-6 col-lg-4">
                 <ul class="text-center">
-                    <li>html</li>
-                    <li>css</li>
+                    <li>Html</li>
+                    <li>Css</li>
                     <li>MySQL</li>
                     <li>C++ e Phyton</li>
                 </ul>
@@ -159,7 +161,7 @@
         </div>
     </div>
 
-    
+
     <!--footer con form contatti-->
     <footer>
         <div class="container">
