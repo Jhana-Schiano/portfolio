@@ -41,12 +41,8 @@
         border: 1px solid $grigio;
         border-radius: 5px;
         box-shadow: 1px 1px 2px;
-    }
-}
-
-.soft-skill:hover {
-    .col:hover {
-        background-color: $contrasto;
-        color: white;
+        p{
+            color: $contrasto;
+        }
     }
 }
